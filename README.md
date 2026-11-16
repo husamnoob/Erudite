@@ -1,10 +1,10 @@
 # Erudite v1.0
 
-A free, open-source AI helper for **Roblox Studio** on **Windows 11**. It reads and edits your open game (scripts, parts, GUIs), tests ideas, and can attack your own game to find exploit holes. It works with any game.
+A free AI helper for **Roblox Studio** on **Windows 11** and **Windows 10**. It reads and edits your open game (scripts, parts, GUIs), tests ideas, and can attack your own game to find exploit holes. It works with any game.
 
 Made by **Eggmaster** (@husamnoob).
 
-Erudite runs on Google's free Gemini model (`gemini-3.5-flash-lite`), so it is fast and costs nothing, but a free model is not as strong as the paid ones. Check what it did before you publish your game.
+Erudite runs on Google's free Gemini model (`gemini-3.5-flash-lite`), so it is fast and costs nothing, but a free model is not as strong as the paid ones. Always playtest your game and look over Erudite's changes before you publish. Use `/rollback` if something is wrong.
 
 ## What you need
 
@@ -13,7 +13,7 @@ Erudite runs on Google's free Gemini model (`gemini-3.5-flash-lite`), so it is f
 - [Node.js](https://nodejs.org)
 - Claude Code (install it from its official website)
 - A free Gemini key from https://aistudio.google.com/apikey
-- Windows Terminal (optional, gives Erudite its glass look)
+- Windows Terminal, free from the Microsoft Store (usually already on Windows 11, but not on Windows 10)
 
 ## Set up
 
@@ -29,10 +29,10 @@ Never share your key with anyone or paste it into a chat.
 
 | Command | What it does |
 |---|---|
-| `/cards` | Opens the CARDS folder and lists your cards |
+| `/cards` | Opens the CARDS folder and lists your cards (instant, no AI) |
 | `/cardadd` | Adds a card to your game. Type a note after `//` |
 | `/exploit` | Attacks your own game, ranks the holes, then fixes them |
-| `/huhgame` | change your game's client code so it is harder to read and looks like it was written by a monkey (backs up first) |
+| `/huhgame` | Scrambles your game's client code so it is harder to read (backs up first) |
 | `/rollback` | Undoes the last change Erudite made |
 
 ## Lessons
@@ -47,4 +47,4 @@ When you tell Erudite it was wrong, or it uses a tool that does not exist, it mu
 
 ## License
 
-Use, change and share Erudite freely, but credit **Eggmaster** as the original creator. Other people's work included here keeps its own license: see `THIRD-PARTY-LICENSES.md`.
+Free for noncommercial use. You may use, change and share Erudite for noncommercial purposes, as long as you keep the notice that credits **Eggmaster** (@husamnoob) as the original creator. You may not sell it or use it commercially. Full terms are in `LICENSE`. Other people's work included here keeps its own license: see `THIRD-PARTY-LICENSES.md`.
