@@ -1,2 +1,2 @@
 # Erudite
-The roblox AI that builds mostly slop games
+The roblox AI that builds mostly slop games.
