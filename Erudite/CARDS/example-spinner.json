@@ -1,0 +1,81 @@
+{
+  "card_version": 1,
+  "name": "spinner",
+  "description": "Demo card: any Part tagged 'Spinner' slowly rotates. Also has a placeholder sound id so you can test the asset-id warning.",
+  "requires": [
+    "Nothing. Works in any game."
+  ],
+  "files": [
+    {
+      "path": "ServerScriptService/CardSpinner",
+      "class": "Script",
+      "code": [
+        "-- Spinner card: every Part tagged 'Spinner' slowly rotates.",
+        "local CollectionService = game:GetService('CollectionService')",
+        "local RunService = game:GetService('RunService')",
+        "",
+        "local SETTINGS = {",
+        "\tTag = 'Spinner',",
+        "\tDegreesPerSecond = 90,",
+        "\tSoundId = 'rbxassetid://0', -- placeholder, set a real id to enable the hum",
+        "\tSoundVolume = 0.3,",
+        "}",
+        "",
+        "local spinning = {}",
+        "",
+        "local function track(part)",
+        "\tif not part:IsA('BasePart') then return end",
+        "\tspinning[part] = true",
+        "\tif SETTINGS.SoundId ~= 'rbxassetid://0' and not part:FindFirstChild('SpinHum') then",
+        "\t\tlocal s = Instance.new('Sound')",
+        "\t\ts.Name = 'SpinHum'",
+        "\t\ts.SoundId = SETTINGS.SoundId",
+        "\t\ts.Volume = SETTINGS.SoundVolume",
+        "\t\ts.Looped = true",
+        "\t\ts.Parent = part",
+        "\t\ts:Play()",
+        "\tend",
+        "end",
+        "",
+        "CollectionService:GetInstanceAddedSignal(SETTINGS.Tag):Connect(track)",
+        "CollectionService:GetInstanceRemovedSignal(SETTINGS.Tag):Connect(function(part)",
+        "\tspinning[part] = nil",
+        "end)",
+        "for _, part in CollectionService:GetTagged(SETTINGS.Tag) do",
+        "\ttrack(part)",
+        "end",
+        "",
+        "RunService.Heartbeat:Connect(function(dt)",
+        "\tlocal angle = math.rad(SETTINGS.DegreesPerSecond) * dt",
+        "\tfor part in spinning do",
+        "\t\tif part.Parent then",
+        "\t\t\tpart.CFrame = part.CFrame * CFrame.Angles(0, angle, 0)",
+        "\t\telse",
+        "\t\t\tspinning[part] = nil",
+        "\t\tend",
+        "\tend",
+        "end)"
+      ]
+    }
+  ],
+  "settings": {
+    "Tag": "Spinner",
+    "DegreesPerSecond": 90,
+    "SoundId": "rbxassetid://0",
+    "SoundVolume": 0.3
+  },
+  "adapt": [
+    "Change the tag name or speed if the game already uses a different tag.",
+    "Set a real SoundId only if the user wants a hum."
+  ],
+  "ids": [
+    {
+      "id": "0",
+      "kind": "Sound",
+      "where": "SETTINGS.SoundId",
+      "note": "placeholder, not a real asset"
+    }
+  ],
+  "test": "Add the tag 'Spinner' to a Part (Tag Editor), playtest, and the Part should rotate.",
+  "notes": "Example card that ships with Erudite. Safe to delete."
+}

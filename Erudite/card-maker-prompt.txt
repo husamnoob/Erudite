@@ -1,0 +1,70 @@
+COPY EVERYTHING BELOW, PASTE IT INTO ANY AI (ChatGPT, Gemini...), AND WRITE YOUR IDEA AT THE VERY END.
+==========================================================================================
+
+You are making a "card" for ERUDITE, a free AI helper for Roblox Studio. A card is ONE .json file that holds a game feature (the Luau code plus instructions), so anyone can drop it into their own Roblox game. Reply with the card only.
+
+OUTPUT FORMAT
+1. First line: the file name, lowercase with dashes, ending in .json (example: double-jump.json).
+2. Then ONE code block containing only valid JSON. Nothing after it except at most 3 short lines of plain-words notes for a beginner.
+3. Do not ask me questions. If something is unclear, make the simplest choice and write your assumption in "notes".
+
+THE JSON MUST LOOK LIKE THIS (same keys, same names):
+{
+  "card_version": 1,
+  "name": "short-name",
+  "description": "One sentence: what this feature does for the player.",
+  "requires": ["What the target game needs, or: Nothing. Works in any game."],
+  "files": [
+    {
+      "path": "ServerScriptService/CardShortName",
+      "class": "Script",
+      "code": [
+        "-- one line of Luau per string",
+        "local SETTINGS = {",
+        "    Speed = 10,",
+        "}"
+      ]
+    },
+    {
+      "path": "ReplicatedStorage/CardShortNameRemote",
+      "class": "RemoteEvent"
+    }
+  ],
+  "settings": {"Speed": 10},
+  "adapt": ["Things the user may need to map to their own game, e.g. currency name or folder names."],
+  "ids": [
+    {"id": "123456", "kind": "Sound", "where": "SETTINGS.SoundId"}
+  ],
+  "test": "Step by step: how to see that it works in a playtest.",
+  "notes": "Any assumptions you made."
+}
+
+JSON RULES (a broken file is useless, so check it yourself)
+- "code" is an array of strings, ONE LINE OF LUAU PER STRING, in order.
+- In the Luau code use SINGLE quotes for strings, NEVER double quotes, and NEVER backslashes. Indent with 4 spaces, never tabs. This keeps the JSON valid without escaping.
+- Remotes and other non-script things (RemoteEvent, Folder, BoolValue...) are files with a "class" and NO "code".
+- "class" is one of: Script, LocalScript, ModuleScript, RemoteEvent, RemoteFunction, Folder, or another real Roblox class name.
+- Put every number a game maker might want to change in a SETTINGS table at the top of the script, and copy them into the "settings" object.
+- Re-read the JSON before answering: all strings closed, commas in the right places, brackets matched.
+
+MAKE IT WORK IN ANY GAME
+- No names from one specific game. Names the user has to match (currency name, folders, tags) go in "adapt".
+- Use the Luau task library (task.wait, task.spawn), never wait(). Use the current APIs: no BodyVelocity or other BodyMovers (use LinearVelocity, AlignPosition, VectorForce), and Animator:LoadAnimation, never Humanoid:LoadAnimation.
+- Create what the card needs from code where possible (for example make its own RemoteEvent on the server) so the user does not have to build things by hand.
+- Do not touch the user's data saving or leaderstats unless the idea needs it; if it does, say so in "requires".
+
+SECURITY (very important, exploiters can read and fire anything on the client)
+- The SERVER decides everything that matters: money, rewards, prices, damage, items, cooldowns, positions. A LocalScript may only show effects and send requests.
+- Every RemoteEvent handler on the server must check: argument types (also NaN and math.huge), allowed range, a cooldown per player, that the player is really allowed and close enough, and that the player cannot choose a price, amount or victim. If a check fails: do nothing, no error message.
+- Rewards from touching or ProximityPrompts: the server checks distance and that it was not already collected.
+- Never trust anything the client sends, including positions and "I finished".
+
+SAFETY RULES (a card breaking these will be refused)
+- No hidden code: never use require() with a number, loadstring, getfenv, setfenv, InsertService or LoadAsset, and nothing built from joined or encoded strings.
+- No API keys, tokens or webhooks. No HttpService, TeleportService, MessagingService, Kick or Ban unless my idea clearly needs it, and then say so in "requires".
+- No purchase prompts (gamepass, developer product, Robux) unless my idea is about that. List them in "ids".
+- Use real asset ids ONLY if you know they exist; otherwise put a placeholder id of 0 and say so in "notes". Never invent ids. List EVERY id the code uses in "ids", with its kind (Sound, Animation, Image, Mesh, Gamepass, Product...) and where it is used.
+- Keep it small and simple: as few scripts as possible, short code, no extra features I did not ask for.
+
+MY CARD IDEA (write what you want in plain words, for example: "a double jump that works on mobile too, 2 extra jumps, with a small sound"):
+

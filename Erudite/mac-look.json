@@ -1,0 +1,48 @@
+{
+  "profiles": [
+    {
+      "name": "Erudite",
+      "guid": "{7c3f6a52-2b1e-4c1a-9d3e-5a8b6c2f4e11}",
+      "commandline": "cmd.exe",
+      "hidden": true,
+      "colorScheme": "Erudite Mac",
+      "useAcrylic": true,
+      "opacity": 88,
+      "font": {
+        "face": "Cascadia Mono",
+        "size": 12
+      },
+      "padding": "18, 14, 18, 14",
+      "cursorShape": "filledBox",
+      "scrollbarState": "hidden",
+      "tabTitle": "Erudite v1.0.000",
+      "suppressApplicationTitle": true,
+      "icon": "%LOCALAPPDATA%\\Microsoft\\Windows Terminal\\Fragments\\EruditeCodeMac\\Erudite.ico"
+    }
+  ],
+  "schemes": [
+    {
+      "name": "Erudite Mac",
+      "background": "#1E1E1E",
+      "foreground": "#E6E6E6",
+      "cursorColor": "#F2F2F2",
+      "selectionBackground": "#3F638B",
+      "black": "#1E1E1E",
+      "red": "#FF5F57",
+      "green": "#28C840",
+      "yellow": "#FEBC2E",
+      "blue": "#5C9DFF",
+      "purple": "#D07BFF",
+      "cyan": "#4FD8E8",
+      "white": "#D4D4D4",
+      "brightBlack": "#6E6E6E",
+      "brightRed": "#FF8A84",
+      "brightGreen": "#5FE67A",
+      "brightYellow": "#FFD866",
+      "brightBlue": "#8DBBFF",
+      "brightPurple": "#E3A6FF",
+      "brightCyan": "#86EAF5",
+      "brightWhite": "#FFFFFF"
+    }
+  ]
+}
