@@ -29,7 +29,7 @@ Never share your key with anyone or paste it into a chat.
 
 | Command | What it does |
 |---|---|
-| `/cards` | Opens the CARDS folder and lists your cards (instant, no AI) |
+| `/cards` | Opens the CARDS folder and lists your cards  |
 | `/cardadd` | Adds a card to your game. Type a note after `//` |
 | `/exploit` | Attacks your own game, ranks the holes, then fixes them |
 | `/huhgame` | Scrambles your game's client code so it is harder to read (backs up first) |
