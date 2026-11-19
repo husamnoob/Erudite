@@ -6,12 +6,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR/instant-commands.js\"",
+            "command": "node instant-commands.js",
             "timeout": 10
           },
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR/lessons.js\" hook-prompt",
+            "command": "node lessons.js hook-prompt",
             "timeout": 10
           }
         ]
@@ -22,7 +22,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR/lessons.js\" hook-stop",
+            "command": "node lessons.js hook-stop",
             "timeout": 10
           }
         ]

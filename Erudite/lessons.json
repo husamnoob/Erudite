@@ -1,5 +1,7 @@
 [
   "When a user reports that something did not work, verify connection and requirements thoroughly before executing changes.",
   "When Roblox Studio cannot be called it is probably because roblox studio isnt on, so ask if roblox studio is on or they did not connect the MCP server and give them the steps which is In Studio, open Assistant, click the … menu, then Manage MCP Servers, and switch on Enable Studio as MCP server, and if that doesnt work tell them if they have updated roblox studio. Start Erudite. When it connects, a green indicator in that same menu shows the number of connected clients.",
-  "When a tool, function or API is missing, recognize that it never existed and use the correct available alternative instead."
+  "When a tool, function or API is missing, recognize that it never existed and use the correct available alternative instead.",
+  "When encountering 'You called a tool, function or API that is missing', recognize that it never existed and use the correct available alternative instead.",
+  "When the user says 'You called a tool, function or API that is missing', recognize that the requested tool never existed and use the correct available alternative instead."
 ]

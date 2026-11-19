@@ -131,7 +131,7 @@ function toOpenAI(a, model) {
 
 // OpenAI streaming chunks -> Anthropic streaming events
 function makeConverter(emit, clientModel) {
-  let started = false, idx = -1, open = null, usedTool = false, toolArgs = false, finish = null, outTok = 0, usage = null;
+  let pendingText = "", started = false, idx = -1, open = null, usedTool = false, toolArgs = false, finish = null, outTok = 0, usage = null;
   const start = () => {
     if (started) return; started = true;
     emit("message_start", { type: "message_start", message: { id: "msg_" + rid(), type: "message", role: "assistant", model: clientModel, content: [], stop_reason: null, stop_sequence: null, usage: { input_tokens: 0, output_tokens: 0 } } });
@@ -149,10 +149,7 @@ function makeConverter(emit, clientModel) {
       if (j.usage && j.usage.completion_tokens) outTok = j.usage.completion_tokens;
       const ch = j.choices && j.choices[0]; if (!ch) return;
       const d = ch.delta || {};
-      if (d.content) {
-        if (open !== "text") { close(); idx++; open = "text"; emit("content_block_start", { type: "content_block_start", index: idx, content_block: { type: "text", text: "" } }); }
-        emit("content_block_delta", { type: "content_block_delta", index: idx, delta: { type: "text_delta", text: d.content } });
-      }
+      if (d.content) pendingText += d.content; // held back: shown only if this turn ends without a tool call
       for (const tc of d.tool_calls || []) {
         const f = tc.function || {};
         if (f.name) {
@@ -171,6 +168,7 @@ function makeConverter(emit, clientModel) {
     },
     end() {
       start();
+      if (!usedTool && pendingText) { idx++; open = "text"; emit("content_block_start", { type: "content_block_start", index: idx, content_block: { type: "text", text: "" } }); emit("content_block_delta", { type: "content_block_delta", index: idx, delta: { type: "text_delta", text: pendingText } }); }
       if (idx < 0) { idx++; open = "text"; emit("content_block_start", { type: "content_block_start", index: idx, content_block: { type: "text", text: "" } }); }
       close();
       const reason = usedTool ? "tool_use" : finish === "length" ? "max_tokens" : "end_turn";

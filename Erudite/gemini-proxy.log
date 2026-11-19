@@ -74,3 +74,121 @@
 2026-11-16T08:51:33.625Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2540ms
 2026-11-16T08:51:33.712Z tokens in 17648 out 31 total 18154 | 2.6s | last minute: 1 requests, 18154 tokens | since start: 9 requests, 144225 tokens (gemini-3.5-flash-lite)
 2026-11-16T09:48:22.874Z gemini proxy up on 8788 model gemini-3.5-flash-lite backup gemini-3.5-flash-lite think high | max 8 requests/min, quota wait 30s x 2 attempts
+2026-11-18T13:03:11.476Z gemini proxy up on 8788 model gemini-3.5-flash-lite backup gemini-3.5-flash-lite think high | max 8 requests/min, quota wait 30s x 2 attempts
+2026-11-18T13:03:27.077Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 8122ms
+2026-11-18T13:03:27.084Z tokens in 18862 out 22 total 18960 | 8.1s | last minute: 1 requests, 18960 tokens | since start: 1 requests, 18960 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:03:34.266Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 7097ms
+2026-11-18T13:03:34.282Z tokens in 11500 out 37 total 11615 | 7.1s | last minute: 2 requests, 30575 tokens | since start: 2 requests, 30575 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:07:31.744Z gemini proxy up on 8788 model gemini-3.5-flash-lite backup gemini-3.5-flash-lite think high | max 8 requests/min, quota wait 30s x 2 attempts
+2026-11-18T13:07:53.783Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 18558ms
+2026-11-18T13:07:53.808Z tokens in 18860 out 22 total 19016 | 18.6s | last minute: 1 requests, 19016 tokens | since start: 1 requests, 19016 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:08:04.011Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 10065ms
+2026-11-18T13:08:04.028Z tokens in 11557 out 28 total 11656 | 10.1s | last minute: 2 requests, 30672 tokens | since start: 2 requests, 30672 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:16:35.183Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1702ms
+2026-11-18T13:16:35.188Z tokens in 11597 out 70 total 11778 | 1.7s | last minute: 1 requests, 11778 tokens | since start: 3 requests, 42450 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:16:37.475Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2182ms
+2026-11-18T13:16:37.483Z tokens in 16677 out 96 total 16864 | 2.2s | last minute: 2 requests, 28642 tokens | since start: 4 requests, 59314 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:16:38.915Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1304ms
+2026-11-18T13:16:39.645Z tokens in 16912 out 233 total 17145 | 2.0s | last minute: 3 requests, 45787 tokens | since start: 5 requests, 76459 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:16:41.350Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1584ms
+2026-11-18T13:16:41.820Z tokens in 17167 out 86 total 17253 | 2.1s | last minute: 4 requests, 63040 tokens | since start: 6 requests, 93712 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:43.334Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1410ms
+2026-11-18T13:18:43.859Z tokens in 17371 out 250 total 17621 | 1.9s | last minute: 1 requests, 17621 tokens | since start: 7 requests, 111333 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:45.351Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1427ms
+2026-11-18T13:18:46.636Z tokens in 18078 out 324 total 18402 | 2.7s | last minute: 2 requests, 36023 tokens | since start: 8 requests, 129735 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:47.926Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1212ms
+2026-11-18T13:18:48.259Z tokens in 18483 out 179 total 18662 | 1.5s | last minute: 3 requests, 54685 tokens | since start: 9 requests, 148397 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:50.153Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1827ms
+2026-11-18T13:18:51.637Z tokens in 18761 out 372 total 19133 | 3.3s | last minute: 4 requests, 73818 tokens | since start: 10 requests, 167530 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:53.329Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1638ms
+2026-11-18T13:18:53.730Z tokens in 19158 out 277 total 19435 | 2.0s | last minute: 5 requests, 93253 tokens | since start: 11 requests, 186965 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:54.853Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1052ms
+2026-11-18T13:18:55.242Z tokens in 21017 out 208 total 21225 | 1.4s | last minute: 6 requests, 114478 tokens | since start: 12 requests, 208190 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:56.800Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1506ms
+2026-11-18T13:18:57.747Z tokens in 21395 out 430 total 21825 | 2.5s | last minute: 7 requests, 136303 tokens | since start: 13 requests, 230015 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:58.824Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1027ms
+2026-11-18T13:18:59.565Z tokens in 21866 out 367 total 22233 | 1.8s | last minute: 8 requests, 158536 tokens | since start: 14 requests, 252248 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:18:59.646Z pacing: 8 requests in the last minute, waiting 43s
+2026-11-18T13:19:43.753Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 44110ms
+2026-11-18T13:19:44.683Z tokens in 22373 out 431 total 22804 | 45.0s | last minute: 8 requests, 163719 tokens | since start: 15 requests, 275052 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:19:46.458Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1673ms
+2026-11-18T13:19:46.824Z tokens in 22895 out 237 total 23132 | 2.0s | last minute: 8 requests, 168449 tokens | since start: 16 requests, 298184 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:19:48.101Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1207ms
+2026-11-18T13:19:49.286Z tokens in 23172 out 483 total 23655 | 2.4s | last minute: 8 requests, 173442 tokens | since start: 17 requests, 321839 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:19:50.693Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1339ms
+2026-11-18T13:19:52.245Z tokens in 23734 out 254 total 23988 | 2.9s | last minute: 8 requests, 178297 tokens | since start: 18 requests, 345827 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:21:47.539Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 5044ms
+2026-11-18T13:21:47.544Z tokens in 24518 out 856 total 25668 | 5.0s | last minute: 1 requests, 25668 tokens | since start: 19 requests, 371495 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:21:48.765Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1042ms
+2026-11-18T13:21:48.950Z tokens in 25703 out 88 total 25791 | 1.2s | last minute: 2 requests, 51459 tokens | since start: 20 requests, 397286 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:21:50.722Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1596ms
+2026-11-18T13:21:50.900Z tokens in 25904 out 117 total 26021 | 1.8s | last minute: 3 requests, 77480 tokens | since start: 21 requests, 423307 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:21:54.356Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2921ms
+2026-11-18T13:21:54.532Z tokens in 27228 out 120 total 27422 | 3.1s | last minute: 4 requests, 104902 tokens | since start: 22 requests, 450729 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:22:34.289Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 3129ms
+2026-11-18T13:22:34.294Z tokens in 27362 out 393 total 27892 | 3.1s | last minute: 5 requests, 132794 tokens | since start: 23 requests, 478621 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:22:36.088Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1670ms
+2026-11-18T13:22:36.091Z tokens in 27918 out 85 total 28003 | 1.7s | last minute: 6 requests, 160797 tokens | since start: 24 requests, 506624 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:22:40.353Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 3722ms
+2026-11-18T13:22:40.362Z tokens in 29210 out 162 total 29445 | 3.7s | last minute: 7 requests, 190242 tokens | since start: 25 requests, 536069 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:22:42.450Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1943ms
+2026-11-18T13:22:42.466Z tokens in 29472 out 85 total 29557 | 2.0s | last minute: 8 requests, 219799 tokens | since start: 26 requests, 565626 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:22:45.406Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2453ms
+2026-11-18T13:22:45.424Z tokens in 29693 out 23 total 29747 | 2.5s | last minute: 9 requests, 249546 tokens | since start: 27 requests, 595373 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:23:28.308Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 3322ms
+2026-11-18T13:23:28.316Z tokens in 29728 out 399 total 30275 | 3.3s | last minute: 6 requests, 174919 tokens | since start: 28 requests, 625648 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:23:30.254Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1797ms
+2026-11-18T13:23:30.534Z tokens in 30302 out 91 total 30393 | 2.1s | last minute: 7 requests, 205312 tokens | since start: 29 requests, 656041 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:23:34.084Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 3049ms
+2026-11-18T13:23:34.094Z tokens in 30529 out 43 total 30594 | 3.1s | last minute: 8 requests, 235906 tokens | since start: 30 requests, 686635 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:24:07.383Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 4505ms
+2026-11-18T13:24:07.389Z tokens in 30583 out 702 total 31645 | 4.5s | last minute: 4 requests, 122907 tokens | since start: 31 requests, 718280 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:24:09.263Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1767ms
+2026-11-18T13:24:09.327Z tokens in 31677 out 89 total 31766 | 1.8s | last minute: 5 requests, 154673 tokens | since start: 32 requests, 750046 tokens (gemini-3.5-flash-lite)
+2026-11-18T13:24:12.838Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2971ms
+2026-11-18T13:24:12.946Z tokens in 31901 out 32 total 31951 | 3.1s | last minute: 6 requests, 186624 tokens | since start: 33 requests, 781997 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:09.902Z gemini proxy up on 8788 model gemini-3.5-flash-lite backup gemini-3.5-flash-lite think high | max 8 requests/min, quota wait 30s x 2 attempts
+2026-11-19T05:09:18.404Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 4431ms
+2026-11-19T05:09:18.416Z tokens in 18862 out 22 total 18963 | 4.4s | last minute: 1 requests, 18963 tokens | since start: 1 requests, 18963 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:19.796Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1279ms
+2026-11-19T05:09:19.858Z tokens in 11422 out 36 total 11512 | 1.3s | last minute: 2 requests, 30475 tokens | since start: 2 requests, 30475 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:22.511Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2261ms
+2026-11-19T05:09:22.518Z tokens in 11589 out 14 total 12101 | 2.3s | last minute: 3 requests, 42576 tokens | since start: 3 requests, 42576 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:23.639Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 977ms
+2026-11-19T05:09:23.854Z tokens in 13046 out 98 total 13144 | 1.2s | last minute: 4 requests, 55720 tokens | since start: 4 requests, 55720 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:25.062Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1127ms
+2026-11-19T05:09:25.794Z tokens in 16251 out 299 total 16550 | 1.9s | last minute: 5 requests, 72270 tokens | since start: 5 requests, 72270 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:26.901Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1054ms
+2026-11-19T05:09:27.869Z tokens in 16730 out 354 total 17084 | 2.0s | last minute: 6 requests, 89354 tokens | since start: 6 requests, 89354 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:31.136Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 3003ms
+2026-11-19T05:09:31.142Z tokens in 17215 out 224 total 18113 | 3.0s | last minute: 7 requests, 107467 tokens | since start: 7 requests, 107467 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:09:32.353Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1114ms
+2026-11-19T05:09:32.780Z tokens in 18163 out 135 total 18298 | 1.5s | last minute: 8 requests, 125765 tokens | since start: 8 requests, 125765 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:11:08.486Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 3051ms
+2026-11-19T05:11:08.513Z tokens in 19717 out 255 total 20457 | 3.1s | last minute: 1 requests, 20457 tokens | since start: 9 requests, 146222 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:11:10.124Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1268ms
+2026-11-19T05:11:10.301Z tokens in 20256 out 46 total 20302 | 1.4s | last minute: 2 requests, 40759 tokens | since start: 10 requests, 166524 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:11:54.459Z gemini proxy up on 8788 model gemini-3.5-flash-lite backup gemini-3.5-flash-lite think high | max 8 requests/min, quota wait 30s x 2 attempts
+2026-11-19T05:12:00.227Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1537ms
+2026-11-19T05:12:00.237Z tokens in 18926 out 22 total 19022 | 1.5s | last minute: 1 requests, 19022 tokens | since start: 1 requests, 19022 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:12:02.384Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2099ms
+2026-11-19T05:12:02.449Z tokens in 11417 out 53 total 11591 | 2.2s | last minute: 2 requests, 30613 tokens | since start: 2 requests, 30613 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:12:04.931Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2141ms
+2026-11-19T05:12:04.942Z tokens in 11601 out 14 total 12075 | 2.2s | last minute: 3 requests, 42688 tokens | since start: 3 requests, 42688 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:12:06.042Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1001ms
+2026-11-19T05:12:06.256Z tokens in 13020 out 101 total 13121 | 1.2s | last minute: 4 requests, 55809 tokens | since start: 4 requests, 55809 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:12:07.951Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1618ms
+2026-11-19T05:12:07.957Z tokens in 16168 out 41 total 16469 | 1.6s | last minute: 5 requests, 72278 tokens | since start: 5 requests, 72278 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:12:10.464Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 2448ms
+2026-11-19T05:12:10.467Z tokens in 16715 out 113 total 17347 | 2.5s | last minute: 6 requests, 89625 tokens | since start: 6 requests, 89625 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:12:11.924Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1375ms
+2026-11-19T05:12:12.013Z tokens in 17403 out 82 total 17558 | 1.5s | last minute: 7 requests, 107183 tokens | since start: 7 requests, 107183 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:13:18.984Z gemini proxy up on 8788 model gemini-3.5-flash-lite backup gemini-3.5-flash-lite think high | max 8 requests/min, quota wait 30s x 2 attempts
+2026-11-19T05:13:25.225Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1815ms
+2026-11-19T05:13:25.231Z tokens in 18930 out 22 total 18994 | 1.8s | last minute: 1 requests, 18994 tokens | since start: 1 requests, 18994 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:13:26.728Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1429ms
+2026-11-19T05:13:26.848Z tokens in 11385 out 61 total 11517 | 1.5s | last minute: 2 requests, 30511 tokens | since start: 2 requests, 30511 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:17:00.972Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 1168ms
+2026-11-19T05:17:00.978Z tokens in 11454 out 22 total 11530 | 1.2s | last minute: 1 requests, 11530 tokens | since start: 3 requests, 42041 tokens (gemini-3.5-flash-lite)
+2026-11-19T05:17:01.834Z POST /v1/messages -> 200 gemini-3.5-flash-lite first byte 821ms
+2026-11-19T05:17:01.958Z tokens in 11560 out 60 total 11620 | 0.9s | last minute: 2 requests, 23150 tokens | since start: 4 requests, 53661 tokens (gemini-3.5-flash-lite)

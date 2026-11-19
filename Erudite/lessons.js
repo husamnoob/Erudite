@@ -121,7 +121,7 @@ if (cmd === 'add') {
           const buf = Buffer.alloc(len);
           fs.readSync(fd, buf, 0, len, size - len);
           fs.closeSync(fd);
-          missingTool = MISSING_TOOL.test(buf.toString('utf8'));
+          missingTool = false; // switched off: it fired by mistake (for example when Studio is not connected) and forced useless lessons
         }
       } catch (e) {}
       if (st.owed !== 'correction' && !missingTool) { log('hook-stop ran | nothing owed, allowing'); process.exit(0); }
