@@ -44,6 +44,7 @@ When you tell Erudite it was wrong, or it uses a tool that does not exist, it mu
 - Studio must be open with a game loaded, or Erudite says it cannot find Studio.
 - Erudite can read and change your open game. Only use it on games you own, and keep a backup.
 - If Windows blocks a file, unblock the zip first (step 1).
+- The card-maker-prompt.txt is a prompt for other ais to make cards!
 
 ## License
 
