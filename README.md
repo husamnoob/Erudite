@@ -11,7 +11,7 @@ Erudite runs on Google's free Gemini model (`gemini-3.5-flash-lite`), so it is f
 - Windows 11, or Windows 10 (not tested on Windows 10 yet)
 - Roblox Studio (latest version)
 - [Node.js](https://nodejs.org)
-- Claude Code (install it from its official website)
+- Claude Code (install it from its official website it'll ask you to run irm https://claude.ai/install.ps1 | iex on your terminal)
 - A free Gemini key from https://aistudio.google.com/apikey
 - Windows Terminal, free from the Microsoft Store (usually already on Windows 11, but not on Windows 10)
 
