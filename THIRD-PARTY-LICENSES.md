@@ -41,6 +41,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+## Stud UI skill (design numbers)
+
+The `stud-ui` skill (`.claude/skills/stud-ui/`) was written by Eggmaster. Its code is original. Its sizes, colors and layout numbers were measured from the Stud-UI-Clean-Roblox project by TemporaryLooker22 (https://github.com/TemporaryLooker22/Stud-UI-Clean-Roblox), which is MIT licensed. Thank you to TemporaryLooker22.
+
+The studs picture used by the skill is a Roblox asset id. It is one setting (`SETTINGS.StudTexture` in `StudUI.lua`) and can be changed to any other image.
+
 ## Not included
 
 Erudite does not include Claude Code, Node.js or Windows Terminal. Users install those themselves, and each one has its own license.
