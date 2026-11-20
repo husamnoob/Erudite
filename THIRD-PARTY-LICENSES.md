@@ -43,7 +43,7 @@ SOFTWARE.
 
 ## Stud UI skill (design numbers)
 
-The `stud-ui` skill (`.claude/skills/stud-ui/`) was written by Eggmaster. Its code is original. Its sizes, colors and layout numbers were measured from the Stud-UI-Clean-Roblox project by TemporaryLooker22 (https://github.com/TemporaryLooker22/Stud-UI-Clean-Roblox), which is MIT licensed. Thank you to TemporaryLooker22.
+The `stud-ui` skill (`.claude/skills/stud-ui/`) was written by Eggmaster. Its code is original. Its sizes, colors and layout numbers were measured from the Stud-UI-Clean-Roblox project by TemporaryLooker22 (https://github.com/TemporaryLooker22/Stud-UI-Clean-Roblox), which is MIT licensed. Thank you to TemporaryLooker22. You are the goat fr fr
 
 The studs picture used by the skill is a Roblox asset id. It is one setting (`SETTINGS.StudTexture` in `StudUI.lua`) and can be changed to any other image.
 
